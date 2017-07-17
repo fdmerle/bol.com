@@ -24,12 +24,12 @@ public class DriverWrapper {
             case Chrome:
                 System.setProperty("webdriver.chrome.driver", Paths.get("src\\main", "resources", "chromedriver.exe").toString());
                 webDriver = new ChromeDriver();
-                implicitDelay(webDriver,5);
+                implicitDelay(webDriver,10);
 
                 break;
             case FireFox:
                 webDriver = new FirefoxDriver();
-                implicitDelay(webDriver,5);
+                implicitDelay(webDriver,10);
 
                 break;
             case IE:
